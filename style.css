@@ -1,0 +1,132 @@
+/* --------------------------------- CATATAN -------------------------------- */
+
+/* All responsive modes are tested on : http://responsivetesttool.com/ */
+
+/* ------------------------------- ABOUT TEXT ------------------------------- */
+
+html {
+  /* Smooth Scroll */
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #ffffff !important;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  color: #222831;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 24px;
+  color: #393e46;
+}
+
+p {
+  font-weight: 300;
+  font-size: 24px;
+  color: #393e46;
+}
+
+hr {
+  background-color: gray;
+  border-radius: 12px;
+  height: 1px;
+}
+
+.separator {
+  color: #393e46;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 24px;
+}
+
+.separator::before,
+.separator::after {
+  content: '';
+  flex: 1;
+  border-bottom: 2px solid #eaeaea;
+}
+
+.separator::before {
+  margin-right: .25em;
+}
+
+.separator::after {
+  margin-left: .25em;
+}
+
+/* ------------------------------- GENERAL CSS ------------------------------ */
+
+.container {
+  max-width: 960px;
+  /* margin: auto; */
+  /* padding: 0 30px; */
+}
+
+.unone {
+  user-select: none;
+}
+
+/* ------------------------------- RESPONSIVE ------------------------------- */
+
+/* Sebenarnya cara ini tidak baik, seolah seperti dipaksa zoom */
+/* Catatan : setiap size @media dibawah ini dapat digunakan sebagai
+  acuan responsiveness dalam sebuah proyek website */
+/* Tested on : http://responsivetesttool.com/ */
+
+/* Mobile Breakpoint 991px ➜ 991x568 px */
+@media (max-width: 568px) {
+  body {
+    zoom: 100%;
+  }
+}
+
+/* Mobile Breakpoint 480px ➜ 480x896 px */
+@media (max-width: 480px) {
+  body {
+    zoom: 90%;
+  }
+}
+
+/* Mobile Breakpoint 414px ➜ 414x896 px */
+@media (max-width: 414px) {
+  body {
+    zoom: 80%;
+  }
+}
+
+/* Mobile Breakpoint iPhone 6/6s/7 ➜ 375x667 px */
+@media (max-width: 375px) {
+  body {
+    zoom: 70%;
+  }
+}
+
+/* Mobile Breakpoint 768px ➜ 768x360 px */
+@media (max-width: 360px) {
+  body {
+    zoom: 67%;
+  }
+}
+
+/* --------------------------------- LAINNYA --------------------------------- */
+
+.profile {
+  width: 150px;
+  border-radius: 100%;
+}
+
+a {
+  font-style: normal;
+  font-weight: 400 !important;
+  font-size: 24px !important;
+  color: #F9F9F9 !important;
+}
