@@ -46,20 +46,9 @@ hr {
   align-items: center;
   text-align: center;
   font-size: 24px;
-}
-
-.separator::before,
-.separator::after {
   border-bottom: 2px solid #eaeaea;
 }
 
-.separator::before {
-  margin-right: .25em;
-}
-
-.separator::after {
-  margin-left: .25em;
-}
 
 /* ------------------------------- GENERAL CSS ------------------------------ */
 
