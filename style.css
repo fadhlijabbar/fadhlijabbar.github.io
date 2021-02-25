@@ -19,10 +19,10 @@ h1 {
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
-  color: #222831;
+  color: #333333;
 }
 
-h2 {
+.h2 {
   font-weight: 300;
   font-size: 24px;
   color: #393e46;
@@ -41,12 +41,10 @@ hr {
 }
 
 .separator {
-  color: #393e46;
   display: flex;
   align-items: center;
   text-align: center;
   font-size: 24px;
-  border-bottom: 2px solid #eaeaea;
 }
 
 

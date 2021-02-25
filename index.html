@@ -25,9 +25,9 @@
 
       <div class="row">
         <div class="col text-center mt-5 mb-4">
-          <img class="mb-3 profile" src="assets/profile.png" />
-          <h1>Fadhli Jabbar</h1>
-          <h2>Software Engineering Student</h2>
+          <img class="mb-3 profile" src="assets/profile.jpg" />
+          <h1>Hi, I am Fadhli</h1>
+          <span class="h2" id="typed"></span>
           
           <div class="separator mt-4 mb-4"></div>
 
@@ -39,8 +39,12 @@
 
           <div class="text-center" style="margin-top: 100px;">
             <div class="d-inline-flex mx-3">
+              <img src="assets/feather-map-pin.svg" class="unone" style="margin-top: -8px; margin-right: 20px;">
+              <div class="h2">Karawang, Indonesia</div>
+            </div>
+            <div class="d-inline-flex mx-3">
               <img src="assets/feather-mail.svg" class="unone" style="margin-top: -8px; margin-right: 20px;">
-              <h2>fadhlijabbar@outlook.com</h2>
+              <div class="h2">fadhlijabbar@outlook.com</div>
             </div>
           </div>
 
@@ -55,7 +59,17 @@
   <script src="library/js/bootstrap.min.js"></script>
   <script src="library/js/sweetalert2.all.min.js"></script>
 
+  <script src="node_modules\typed.js\lib\typed.js"></script>
   <script src="script.js"></script>
+  <script>
+    var typed = new Typed('#typed', {
+      strings: ['a Sofware Engineering Student', 'a Sofware Engineer'],
+      typeSpeed: 50,
+      backSpeed: 25,
+      smartBackspace: true, // this is a default
+      loop: true
+    });
+  </script>
 </body>
 
 </html>
